@@ -24,6 +24,13 @@ public class car {
    }
    public static void main (String[] args) {
        car car = new car();
-       car car1 = new car("Toyota","Camry", 1996);
+       car previousEthanCar = new car("Toyota","Camry", 1996);
+       car currentEthanCar = new car("Hyundai", "VeraCruz", 2011);
+       System.out.println("Car (default): " + car.toString());
+       System.out.println("Previous Ethan's Car: " + previousEthanCar.toString());
+       System.out.println("Current Ethan's Car: " + currentEthanCar.toString());
    }
+    public String toString() {
+        return "Make: " + this.make + ", Model: " + this.model + ", Year: " + this.year + ", Mileage: " + this.mileage;
+    }
 }
